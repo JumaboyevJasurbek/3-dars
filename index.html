@@ -5,9 +5,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+  <title>3-dars</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class="heading text-center mt-3 mb-4">Movies catalog</h1>
+    <div class="row">
+      <div class="col-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="ave" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" placeholder="5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>All</option>
+          <option value="1">Avanger</option>
+          <option value="2">Comedia</option>
+          <option value="3">Dramma</option>
+        </select>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>Rating (High to low)</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Search</button>
+        </div>
+        <h2 class="heading text-center mt-4 fs-1">Bookmarked movies</h2>
+        <div class="box border">
+          <div class="p-4">
+            <h4 class="heading">Avangers: Infinity War</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove</a>
+          </div>
+        </div>
+        <div class="box border rounded">
+          <div class="p-4">
+            <h4 class="heading">The Avengers</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove</a>
+          </div>
+        </div>
+        <div class="box border">
+          <div class="p-4">
+            <h4 class="heading">12 Years a Slave</h4>
+            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">Remove</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 ps-5">
+        <h3 class="">Search result: 39</h3>
+        <div class="alert alert-info" role="alert">
+          Use the form the left to search for a movie
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="card col-5.">
+            <img src="https://picsum.photos/id/400/400/250" alt="img">
+            <h4 class="p-4">Avengers: Infinity War</h4>
+            <p class="p-4 fs-5 fw-bold">  2012</p>
+          </div>
+          <div class="card col-5.">
+            <img src="https://picsum.photos/id/320/400/250" alt="img">
+            <h4 class="p-4">The Avengers</h4>
+            <p class="p-4 fs-5 fw-bold">2012</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
